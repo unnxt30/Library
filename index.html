@@ -21,7 +21,7 @@
 
     
     <div class="form-container">
-        <form action=""></form>
+        <form id="bookForm">
             <div class="form-heading">Add new Book</div>
             <div class="title">
                 <input type="text" name = "title" placeholder = "Title">
@@ -36,12 +36,18 @@
                 <input type="checkbox" name="read" class="check"></input>
                 <label for="read">Have you read the book?</label>
             </div>
-            <div class="submit">
-                <input type="submit" name = "submit" value="Submit">
-            </div>
+            <!-- <div class="submit">
+                <input type="submit" value="Submit">
+            </div> -->
+            <input type="submit" value="Submit" id="submitButton">
         </form>
     </div>
     <div id="overlay"></div>
+    <div class="gridContainer">
+        <div class="bookGrid">
+        </div>
+    </div>
+    
 
     
     

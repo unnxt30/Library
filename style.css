@@ -5,7 +5,7 @@ Text: #bcdc49
 
 body
 {
-    background-color: black ;
+    background-color: black ;      
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -166,5 +166,72 @@ input[type="submit"]:hover
 
 #overlay.active {
     display: block;
+}
+
+#bookForm{
+    display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 15px;
+}
+
+.gridContainer
+{
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.bookGrid
+{
+    /* max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-flow: row;
+    gap: 35px;
+    margin-top: 50px;
+    /* overflow: auto; */
+    /* max-width: 1200px; */
+}
+
+.card
+{   
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: white;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    gap: 20px;
+}
+
+.card button
+{
+    width: 100%;
+    height: 40px;
+    width: 100%;
+    background:transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.card button:hover
+{
+    cursor: pointer;
+}
+
+
+
+.toggle-read.true
+{
+    background-color: #bcdc49;
+}
+
+.toggle-read.false
+{
+    background-color: rgb(211, 54, 80);
 }
 
